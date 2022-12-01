@@ -1,4 +1,4 @@
-s = ... # input
+s=... # input
 # Part 1
 print(max(eval(s.replace(*'\n+').replace('++',","))))
 # Part 2
