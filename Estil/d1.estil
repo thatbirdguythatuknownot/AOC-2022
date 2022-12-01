@@ -1,0 +1,7 @@
+s="" /; input
+/; Part 1
+print(eval(s.replace(@'\n+','++',',')).max())
+/; Part 2
+print(eval(s.replace(@'\n+','++',',')).max(3).sum())
+/; Both parts (prints in order of part 2, part 1)
+print((v=eval(s.replace(@'\n+','++',',')).max(3)).sum(),v[0])
