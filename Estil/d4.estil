@@ -1,0 +1,7 @@
+s="" # input
+# Part 1
+print(sum(1-(a>c<=d<b||d>b>=a<c):a,b,c,d~>@s.split('\n').map(|l|eval(l.replace(@'-,')))))
+# Part 2
+print(sum(a<=d>=c<=b:a,b,c,d~>@s.split('\n').map(|l|eval(l.replace(@'-,')))))
+# Both parts
+print(sum((1-(a>c<=d<b||d>b>=a<c),a<=d>=c<=b):a,b,c,d~>@s.split('\n').map(|l|eval(l.replace(@'-,')))))
