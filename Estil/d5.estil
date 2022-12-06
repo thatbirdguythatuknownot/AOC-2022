@@ -1,7 +1,6 @@
 s="" /; input
 /; Both parts
-g,j=str.split,''.join f=g(s,'\n')
-for o~>-1,1{d=' '+zip(@f[:8]).map(|m|j(g(j(m))))[1::4]for l~>f[10:]{a,b,c=g(l)[1::2].map(int)d[c]=d[b][:a][::o]+@d[b][=a:]}print(j(@zip(@d)))}
+g,j=str.split,''.join f=g(s,'\n')for o~>-1,1{d=' '+zip(@f[:8]).map(|m|j(g(j(m))))[1::4]for l~>f[10:]{a,b,c=g(l)[1::2].map(int)d[c]=d[b][:a][::o]+@d[b][=a:]}print(j(@zip(@d)))}
 /:
 x+iterable
 Works like Python- as in `x.__add(iterable)` is not implemented so `iterable.__radd(x)` is done.
