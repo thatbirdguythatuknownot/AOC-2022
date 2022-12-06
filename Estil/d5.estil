@@ -1,0 +1,14 @@
+s="" /; input
+/; Both parts
+g,j=str.split,''.join f=g(s,'\n')
+for o~>-1,1{d=' '+zip(@f[:8]).map(|m|j(g(j(m))))[1::4]for l~>f[10:]{a,b,c=g(l)[1::2].map(int)d[c]=d[b][:a][::o]+@d[b][=a:]}print(j(@zip(@d)))}
+/:
+x+iterable
+Works like Python- as in `x.__add(iterable)` is not implemented so `iterable.__radd(x)` is done.
+
+x+iterator[x:y:z]
+`iterator` will discard the first `x` iterations no matter what `y` is. The rest of the info (`y` and `z`) are
+    stored in an internal structure to determine the next iteration later. Any binary operation/function/method
+    on an iterator will use the iterator itself depending on the implementation of `x`. Else, `iterator` is
+    immediately evaluated to produce a list and only a list as the value for the operation.
+:/
