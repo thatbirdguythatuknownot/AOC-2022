@@ -1,11 +1,11 @@
 s="" /; input
 /; Part 1
-p=()d={}s.xscanall("(%B+)%B+(%B+)",(a,b):{try{for x~>->-~#p{d[i]=d.get((i=p[:x]),0)+int(a)}}exc{if'd '~>r{p+=b,}}if'..'==b{p[=:-2]}})print(sum(x*(1e5>x):_,x~>@d))
+m=[]d=[]s.xscanall("(%B+)%B+(.+)",(a,b):{ifzip'/'>b:'/'<a<':'{@m,v=m d+=v,;m[-1]+=v}m[-1]+=int(a)elif'$ d'>r m+=0,})print(sum(x*(1e5>x):x~>d))
 /:
-  try-except grammar:
+  try-except grammar (old code):
       'try' '{' ... '}'['exc' '{' ... '}']['else' '{' ... '}']['fin' '{' ... '}']
 :/
 /; Part 2
-p=()d={}s.xscanall("(%B+)%B+(%B+)",(a,b):{try{for x~>->-~#p{d[i]=d.get((i=p[:x]),0)+int(a)}}exc{if'd '~>r{p+=b,}}if'..'==b{p[=:-2]}})print(min(x:_,x~>@d:x>d[()]-4e7))
+m=[]d=[]s.xscanall("(%B+)%B+(.+)",(a,b):{ifzip'/'>b:'/'<a<':'{@m,v=m d+=v,;m[-1]+=v}m[-1]+=int(a)elif'$ d'>r m+=0,})print(min(x:x~>d:x>d[()]-4e7))
 /; Both parts
-p=()d={}s.xscanall("(%B+)%B+(%B+)",(a,b):{try{for x~>->-~#p{d[i]=d.get((i=p[:x]),0)+int(a)}}exc{if'd '~>r{p+=b,}}if'..'==b{p[=:-2]}})print(sum(x*(1e5>x):_,x~>@d),min(x:_,x~>@d:x>d[()]-4e7))
+m=[]d=[]s.xscanall("(%B+)%B+(.+)",(a,b):{ifzip'/'>b:'/'<a<':'{@m,v=m d+=v,;m[-1]+=v}m[-1]+=int(a)elif'$ d'>r m+=0,})print(sum(x*(1e5>x):x~>d),min(x:x~>d:x>d[()]-4e7))
