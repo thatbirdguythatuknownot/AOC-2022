@@ -1,25 +1,25 @@
 s=... # input
 # Part 1
-s=[];d=()
-for r in open(0):
+m=[];d=()
+for r in s.split('\n'):
  a,*_,b=r.split()
- if'/'>b:*s,v=s;d+=v,;s[-1]+=v
- elif'$ d'>r:s+=0,
- if'/'<a<':':s[-1]+=int(a)
+ if'/'>b:*m,v=m;d+=v,;m[-1]+=v
+ elif'$ d'>r:m+=0,
+ if'/'<a<':':m[-1]+=int(a)
 print(sum(_*(1e5>_)for _ in d))
 # Part 2
-s=[];d=()
-for r in open(0):
+m=[];d=()
+for r in s.split('\n'):
  a,*_,b=r.split()
- if'/'>b:*s,v=s;d+=v,;s[-1]+=v
- elif'$ d'>r:s+=0,
- if'/'<a<':':s[-1]+=int(a)
-print(min(_ for _ in d if _>sum(s)-4e7))
+ if'/'>b:*m,v=m;d+=v,;m[-1]+=v
+ elif'$ d'>r:m+=0,
+ if'/'<a<':':m[-1]+=int(a)
+print(min(_ for _ in d if _>sum(m)-4e7))
 # Both parts
-s=[];d=()
-for r in open(0):
+m=[];d=()
+for r in s.split('\n'):
  a,*_,b=r.split()
- if'/'>b:*s,v=s;d+=v,;s[-1]+=v
- elif'$ d'>r:s+=0,
- if'/'<a<':':s[-1]+=int(a)
-print(sum(_*(1e5>_)for _ in d),min(_ for _ in d if _>sum(s)-4e7))
+ if'/'>b:*m,v=m;d+=v,;m[-1]+=v
+ elif'$ d'>r:m+=0,
+ if'/'<a<':':m[-1]+=int(a)
+print(sum(_*(1e5>_)for _ in d),min(_ for _ in d if _>sum(m)-4e7))
