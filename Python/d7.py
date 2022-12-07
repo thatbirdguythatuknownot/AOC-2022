@@ -1,28 +1,28 @@
 s=... # input
 # Part 1
-p=();d={}
-for r in s.split('\n'):
+p=[];d={}
+for r in open(0):
  a,*_,b=r.split();q=()
- try:
-  for x in p+('',):d[q]=d.get(q,0)+int(a);q+=x,
- except:p+=(b,)*('d 'in r)
+ if'd 'in r:p+=b,
  if'..'==b:p=p[:-2]
+ if'/'<a<':':
+  for x in p+[a]:d[q]=d.get(q,0)+int(a);q+=x,
 print(sum(d[_]*(1e5>d[_])for _ in d))
 # Part 2
-p=();d={}
-for r in s.split('\n'):
+p=[];d={}
+for r in open(0):
  a,*_,b=r.split();q=()
- try:
-  for x in p+('',):d[q]=d.get(q,0)+int(a);q+=x,
- except:p+=(b,)*('d 'in r)
+ if'd 'in r:p+=b,
  if'..'==b:p=p[:-2]
+ if'/'<a<':':
+  for x in p+[a]:d[q]=d.get(q,0)+int(a);q+=x,
 print(min(d[_]for _ in d if d[_]>d[()]-4e7))
 # Both parts
-p=();d={}
-for r in s.split('\n'):
+p=[];d={}
+for r in open(0):
  a,*_,b=r.split();q=()
- try:
-  for x in p+('',):d[q]=d.get(q,0)+int(a);q+=x,
- except:p+=(b,)*('d 'in r)
+ if'd 'in r:p+=b,
  if'..'==b:p=p[:-2]
+ if'/'<a<':':
+  for x in p+[a]:d[q]=d.get(q,0)+int(a);q+=x,
 print(sum(d[_]*(1e5>d[_])for _ in d),min(d[_]for _ in d if d[_]>d[()]-4e7))
