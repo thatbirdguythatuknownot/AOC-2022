@@ -1,0 +1,7 @@
+s="" # input
+# Part 1
+l=@open(0),;r=@zip(@l),;print([(t=l[i=@//99])=>t[j=@%99]>eval("max(%r|'/'),"*4%(u=t[j+1:-1],t[:j].rev,r[j,i+1:],r[j,:i].rev)).min::->9801].sum)
+# Part 2
+l=@open(0),;r=@zip(@l),;print([(t,j=l[i=@//99],@%99)=>(a+(a<b):a,b~>eval("%r.while{t[j]>@},"*4%(u=t[j+1:-1],t[:j].rev,r[j,i+1:],r[j,:i].rev)),u.map(#)).prd::->9801].max)
+# Both parts
+l=@open(0),;r=@zip(@l),;c=0print([(t=l[i=@//99])=>t[j=@%99]>eval("max(%r|'/'),"*4%(u=t[j+1:-1],t[:j].rev,r[j,i+1:],r[j,:i].rev)).min=<(c=max(c,(a+(a<b):a,b~>eval("%r.while{t[j]>@},"*4%u),u.map(#)).prd)::->9801].sum,c)
